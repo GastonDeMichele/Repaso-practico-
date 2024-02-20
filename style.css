@@ -55,7 +55,11 @@ img {
     padding-top: 5rem;
     margin-left: auto;
     margin-right: auto;
+<<<<<<< HEAD:EJERCICIO REPASO HTML CSS JS/style.css
     margin: 5% auto;
+=======
+    padding-bottom: 20px;
+>>>>>>> 761ac7528388c3f0cc2baf089257df8ad6ad051b:style.css
     width: 100%;
     max-width: var(--container-wuidth);
     min-height: 100vh;
