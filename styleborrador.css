@@ -196,11 +196,13 @@ transition: opacity 0.75s ease;
 
 
 .section {
-  border: 1px solid black;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-top: 3rem;
   margin-left:auto;
   margin-right:auto;
+  
+  width: 100%;
   max-width: 1200px;
   min-height: 100vh;
   text-align: center;
@@ -222,12 +224,14 @@ transition: opacity 0.75s ease;
 
 .cards {
   margin-bottom: 5vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
 }
 
 .card{
   background-color: var(--second-color);
   color: #83DEFF;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .section img,
