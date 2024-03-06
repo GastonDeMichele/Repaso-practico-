@@ -1,53 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <h1>Mi blog</h1>
+      <section class="container">
+        <div class="logo">
+          <a href="index.html">Gaston DM</a>
+        </div>
+        <button class="menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+          </svg>
+        <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"/>
+        </svg>
+        </button>
+        <nav class="menu">
+          <a href="#inicio">Inicio</a>
+          <a href="#acerca">Acerca</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#portafolio">Portafolio</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </section>
     </header>
 
-    <main>
-        <section id="seccion10" class="section">
-            <h2>Filtros de busqueda</h2>
-            <input type="search" placeholder="buscar..." class="card-filter">
-      
-            <article class="cards">
-              <figure class="card">
-                    <img src="https://picsum.photos/id/237/200/300" alt="tech" >
-                  <figcaption>Pet</figcaption>
-              </figure>
-              <figure class="card">
-                  <img src="https://picsum.photos/id/238/200/300" alt="Animals" >
-                  <figcaption>City</figcaption>
-              </figure>
-              <figure class="card">
-                  <img src="https://picsum.photos/id/235/200/300" alt="People" >
-                  <figcaption>Mountain</figcaption>
-              </figure>
-              <figure class="card">
-                  <img src="https://picsum.photos/id/232/200/300" alt="Arch" >
-                  <figcaption>Stars</figcaption>
-              </figure>
-              <figure class="card">
-                  <img src="https://picsum.photos/id/233/200/300" alt="Nature" >
-                  <figcaption>Roads</figcaption>
-                  </figure>
-              <figure class="card">
-                  <img src="https://picsum.photos/id/239/200/300" alt="Nature" >
-                  <figcaption>Flower</figcaption>
-              </figure>
-            </article>
-          </section>
-    </main>
+  <section id="inicio" class="home">
+    <article class="hero-image" style="--image:url('https://picsum.photos/id/229/1920/1080');
+--hero-attatchment:fixed;">
+      <aside class="hero-image-opacity" style="--hero-opacity-color: var(--black-alpha-color);">
+        <div class="hero-image-content">
+          <h2 class="hero-image-title" style="--hero-text-color: var(--white-color);">bienvenidos <br> a mi sitio</h2>
+          <a href="#contacto" class="btn">CONTACTAME</a>
+        </div>
+      </aside>
+    </article>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 Mi Blog</p>
-    </footer>
-    <script src="index.js" type="module"></script>
+
+  <section class="section">
+    <h2>Filtro de búsqueda</h2>
+    <input type="search" placeholder="buscar..." class="card-filter">
+
+    <article class="cards">
+
+      <figure class="card">
+        <img src="https://picsum.photos/id/237/200/300" alt="tech">
+        <figcaption>Pet</figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="https://picsum.photos/id/238/200/300" alt="tech">
+        <figcaption>City</figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="https://picsum.photos/id/239/200/300" alt="tech">
+        <figcaption>Nature</figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="https://picsum.photos/id/240/200/300" alt="tech">
+        <figcaption>Wall</figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="https://picsum.photos/id/241/200/300" alt="tech">
+        <figcaption>Field</figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="https://picsum.photos/id/242/200/300" alt="tech">
+        <figcaption>Roads</figcaption>
+      </figure>
+
+    </article>
+
+  </section>
+
+  <footer>
+    <small>&copy; 2024 Mi Blog </small>
+
+  </footer>
+
+  <script src="index.js" type="module"></script>
 </body>
 </html>
